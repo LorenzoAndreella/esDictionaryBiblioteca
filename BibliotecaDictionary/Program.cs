@@ -37,7 +37,7 @@ public class Program
         Console.WriteLine("Inserisci un ISBN:");
         string isbn = Console.ReadLine();
 
-        if (biblioteca.TryGetValue(isbn, out CLibro libro))
+        if (biblioteca.TryGetValue(isbn, out CLibro libro))    
         {
             Console.WriteLine(libro.Dettagli());
         }
@@ -53,7 +53,7 @@ public class Program
         Console.WriteLine("Inserisci ISBN:");
         string isbn = Console.ReadLine();
 
-        if (isbn.Length != 13 || !isbn.All(char.IsDigit))
+        if (isbn.Length != 13 || !isbn.All(char.IsDigit))      
         {
             Console.WriteLine("ISBN non valido! Deve essere un numero di 13 cifre.");
             return;
@@ -73,15 +73,22 @@ public class Program
         Console.WriteLine("Inserisci l'autore:");
         libro.Autore = Console.ReadLine();
 
-        Console.WriteLine("Inserisci l'anno:");
 
         int anno;
-        
-        if (!int.TryParse(Console.ReadLine(), out anno))
+        string annStringa;
+
+        do
         {
-            Console.WriteLine("Anno non valido");
-            return;
-        }
+            Console.WriteLine("Inserisci l'anno:");
+            annStringa = Console.ReadLine();
+
+            if (!int.TryParse(annStringa, out anno))
+            {
+                Console.WriteLine("Anno non valido. Riprova");
+            }
+
+        } while (!int.TryParse(annStringa, out anno));
+        
 
         libro.Anno = anno;
 

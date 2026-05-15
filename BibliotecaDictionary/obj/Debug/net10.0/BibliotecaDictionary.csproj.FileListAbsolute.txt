@@ -12,3 +12,4 @@ C:\Users\lorenzo\Desktop\c sharp\BibliotecaDictionary\BibliotecaDictionary\obj\D
 C:\Users\lorenzo\Desktop\c sharp\BibliotecaDictionary\BibliotecaDictionary\obj\Debug\net10.0\BibliotecaDictionary.pdb
 C:\Users\lorenzo\Desktop\c sharp\BibliotecaDictionary\BibliotecaDictionary\obj\Debug\net10.0\BibliotecaDictionary.genruntimeconfig.cache
 C:\Users\lorenzo\Desktop\c sharp\BibliotecaDictionary\BibliotecaDictionary\obj\Debug\net10.0\ref\BibliotecaDictionary.dll
+C:\Users\lorenzo\Desktop\c sharp\BibliotecaDictionary\BibliotecaDictionary\obj\Debug\net10.0\BibliotecaDictionary.sourcelink.json
